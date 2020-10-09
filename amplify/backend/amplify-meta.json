@@ -1,0 +1,42 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-myreactnativeapp-dev-02540-authRole",
+			"UnauthRoleArn": "arn:aws:iam::914218297985:role/amplify-myreactnativeapp-dev-02540-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::914218297985:role/amplify-myreactnativeapp-dev-02540-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-myreactnativeapp-dev-02540-deployment",
+			"UnauthRoleName": "amplify-myreactnativeapp-dev-02540-unauthRole",
+			"StackName": "amplify-myreactnativeapp-dev-02540",
+			"StackId": "arn:aws:cloudformation:us-east-1:914218297985:stack/amplify-myreactnativeapp-dev-02540/84bb1220-5ce5-11ea-9afa-0af77bd56d08",
+			"AmplifyAppId": "dsbahmzjdi3eh"
+		}
+	},
+	"api": {
+		"myreactnativeapp": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "connect to dynamo DB",
+							"apiKeyExpirationDays": "90"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "ijgb3gtjzrg2vaomijsqfrmb6u",
+				"GraphQLAPIEndpointOutput": "https://u4szx7gfybe2dptob2zabo5ere.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-debk247awrhopgccugndjb6a64"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-myreactnativeapp-dev-02540-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apimyreactnativeapp"
+			},
+			"lastPushTimeStamp": "2020-03-03T10:35:22.659Z",
+			"lastPushDirHash": "/ibwAA/FMIg5RDeNTPjd56DnYr8="
+		}
+	}
+}

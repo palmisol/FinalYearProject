@@ -1,0 +1,23 @@
+type BookingSystem @model {
+  id: ID!
+  user_id: String
+  appointment_id: String
+  clinic_id: String
+  time: String
+  date: String
+  band: Int
+  time_created: String
+}
+type AppointmentSystem @model {
+  appointment_id: String!
+  decription: String
+  name: String
+  time_created: String
+}
+type ClinicsSystem @model {
+  clinics_id: String!
+  address: String 
+  Website: String 
+  Description: String
+  phone: Int
+}
