@@ -1,135 +1,219 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createBookingSystem = /* GraphQL */ `
-  mutation CreateBookingSystem(
-    $input: CreateBookingSystemInput!
-    $condition: ModelBookingSystemConditionInput
+export const createBookingSystemDb = /* GraphQL */ `
+  mutation CreateBookingSystemDb(
+    $input: CreateBookingSystemDBInput!
+    $condition: ModelBookingSystemDBConditionInput
   ) {
-    createBookingSystem(input: $input, condition: $condition) {
+    createBookingSystemDB(input: $input, condition: $condition) {
       id
-      user_id
       appointment_id
       clinic_id
       time
+      created_at
       date
       band
-      time_created
     }
   }
 `;
-export const updateBookingSystem = /* GraphQL */ `
-  mutation UpdateBookingSystem(
-    $input: UpdateBookingSystemInput!
-    $condition: ModelBookingSystemConditionInput
+export const updateBookingSystemDb = /* GraphQL */ `
+  mutation UpdateBookingSystemDb(
+    $input: UpdateBookingSystemDBInput!
+    $condition: ModelBookingSystemDBConditionInput
   ) {
-    updateBookingSystem(input: $input, condition: $condition) {
+    updateBookingSystemDB(input: $input, condition: $condition) {
       id
-      user_id
       appointment_id
       clinic_id
       time
+      created_at
       date
       band
-      time_created
     }
   }
 `;
-export const deleteBookingSystem = /* GraphQL */ `
-  mutation DeleteBookingSystem(
-    $input: DeleteBookingSystemInput!
-    $condition: ModelBookingSystemConditionInput
+export const deleteBookingSystemDb = /* GraphQL */ `
+  mutation DeleteBookingSystemDb(
+    $input: DeleteBookingSystemDBInput!
+    $condition: ModelBookingSystemDBConditionInput
   ) {
-    deleteBookingSystem(input: $input, condition: $condition) {
+    deleteBookingSystemDB(input: $input, condition: $condition) {
       id
-      user_id
       appointment_id
       clinic_id
       time
+      created_at
       date
       band
-      time_created
     }
   }
 `;
-export const createAppointmentSystem = /* GraphQL */ `
-  mutation CreateAppointmentSystem(
-    $input: CreateAppointmentSystemInput!
-    $condition: ModelAppointmentSystemConditionInput
+export const createAppointmentDb = /* GraphQL */ `
+  mutation CreateAppointmentDb(
+    $input: CreateAppointmentDBInput!
+    $condition: ModelAppointmentDBConditionInput
   ) {
-    createAppointmentSystem(input: $input, condition: $condition) {
-      appointment_id
-      decription
+    createAppointmentDB(input: $input, condition: $condition) {
+      id
+      clinic_id
       name
-      time_created
+      description
+      phone
+      created_at
     }
   }
 `;
-export const updateAppointmentSystem = /* GraphQL */ `
-  mutation UpdateAppointmentSystem(
-    $input: UpdateAppointmentSystemInput!
-    $condition: ModelAppointmentSystemConditionInput
+export const updateAppointmentDb = /* GraphQL */ `
+  mutation UpdateAppointmentDb(
+    $input: UpdateAppointmentDBInput!
+    $condition: ModelAppointmentDBConditionInput
   ) {
-    updateAppointmentSystem(input: $input, condition: $condition) {
-      appointment_id
-      decription
+    updateAppointmentDB(input: $input, condition: $condition) {
+      id
+      clinic_id
       name
-      time_created
+      description
+      phone
+      created_at
     }
   }
 `;
-export const deleteAppointmentSystem = /* GraphQL */ `
-  mutation DeleteAppointmentSystem(
-    $input: DeleteAppointmentSystemInput!
-    $condition: ModelAppointmentSystemConditionInput
+export const deleteAppointmentDb = /* GraphQL */ `
+  mutation DeleteAppointmentDb(
+    $input: DeleteAppointmentDBInput!
+    $condition: ModelAppointmentDBConditionInput
   ) {
-    deleteAppointmentSystem(input: $input, condition: $condition) {
-      appointment_id
-      decription
+    deleteAppointmentDB(input: $input, condition: $condition) {
+      id
+      clinic_id
       name
-      time_created
+      description
+      phone
+      created_at
     }
   }
 `;
-export const createClinicsSystem = /* GraphQL */ `
-  mutation CreateClinicsSystem(
-    $input: CreateClinicsSystemInput!
-    $condition: ModelClinicsSystemConditionInput
+export const createClinicsDb = /* GraphQL */ `
+  mutation CreateClinicsDb(
+    $input: CreateClinicsDBInput!
+    $condition: ModelClinicsDBConditionInput
   ) {
-    createClinicsSystem(input: $input, condition: $condition) {
-      clinics_id
+    createClinicsDB(input: $input, condition: $condition) {
+      id
+      name
       address
-      Website
-      Description
       phone
+      description
+      website
     }
   }
 `;
-export const updateClinicsSystem = /* GraphQL */ `
-  mutation UpdateClinicsSystem(
-    $input: UpdateClinicsSystemInput!
-    $condition: ModelClinicsSystemConditionInput
+export const updateClinicsDb = /* GraphQL */ `
+  mutation UpdateClinicsDb(
+    $input: UpdateClinicsDBInput!
+    $condition: ModelClinicsDBConditionInput
   ) {
-    updateClinicsSystem(input: $input, condition: $condition) {
-      clinics_id
+    updateClinicsDB(input: $input, condition: $condition) {
+      id
+      name
       address
-      Website
-      Description
       phone
+      description
+      website
     }
   }
 `;
-export const deleteClinicsSystem = /* GraphQL */ `
-  mutation DeleteClinicsSystem(
-    $input: DeleteClinicsSystemInput!
-    $condition: ModelClinicsSystemConditionInput
+export const deleteClinicsDb = /* GraphQL */ `
+  mutation DeleteClinicsDb(
+    $input: DeleteClinicsDBInput!
+    $condition: ModelClinicsDBConditionInput
   ) {
-    deleteClinicsSystem(input: $input, condition: $condition) {
-      clinics_id
+    deleteClinicsDB(input: $input, condition: $condition) {
+      id
+      name
       address
-      Website
-      Description
       phone
+      description
+      website
+    }
+  }
+`;
+export const createInfectionsDb = /* GraphQL */ `
+  mutation CreateInfectionsDb(
+    $input: CreateInfectionsDBInput!
+    $condition: ModelInfectionsDBConditionInput
+  ) {
+    createInfectionsDB(input: $input, condition: $condition) {
+      id
+      name
+      description
+      webiste
+    }
+  }
+`;
+export const updateInfectionsDb = /* GraphQL */ `
+  mutation UpdateInfectionsDb(
+    $input: UpdateInfectionsDBInput!
+    $condition: ModelInfectionsDBConditionInput
+  ) {
+    updateInfectionsDB(input: $input, condition: $condition) {
+      id
+      name
+      description
+      webiste
+    }
+  }
+`;
+export const deleteInfectionsDb = /* GraphQL */ `
+  mutation DeleteInfectionsDb(
+    $input: DeleteInfectionsDBInput!
+    $condition: ModelInfectionsDBConditionInput
+  ) {
+    deleteInfectionsDB(input: $input, condition: $condition) {
+      id
+      name
+      description
+      webiste
+    }
+  }
+`;
+export const createOrganiationsDb = /* GraphQL */ `
+  mutation CreateOrganiationsDb(
+    $input: CreateOrganiationsDBInput!
+    $condition: ModelOrganiationsDBConditionInput
+  ) {
+    createOrganiationsDB(input: $input, condition: $condition) {
+      id
+      name
+      description
+      website
+    }
+  }
+`;
+export const updateOrganiationsDb = /* GraphQL */ `
+  mutation UpdateOrganiationsDb(
+    $input: UpdateOrganiationsDBInput!
+    $condition: ModelOrganiationsDBConditionInput
+  ) {
+    updateOrganiationsDB(input: $input, condition: $condition) {
+      id
+      name
+      description
+      website
+    }
+  }
+`;
+export const deleteOrganiationsDb = /* GraphQL */ `
+  mutation DeleteOrganiationsDb(
+    $input: DeleteOrganiationsDBInput!
+    $condition: ModelOrganiationsDBConditionInput
+  ) {
+    deleteOrganiationsDB(input: $input, condition: $condition) {
+      id
+      name
+      description
+      website
     }
   }
 `;

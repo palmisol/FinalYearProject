@@ -1,96 +1,154 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getBookingSystem = /* GraphQL */ `
-  query GetBookingSystem($id: ID!) {
-    getBookingSystem(id: $id) {
+export const getBookingSystemDb = /* GraphQL */ `
+  query GetBookingSystemDb($id: ID!) {
+    getBookingSystemDB(id: $id) {
       id
-      user_id
       appointment_id
       clinic_id
       time
+      created_at
       date
       band
-      time_created
     }
   }
 `;
-export const listBookingSystems = /* GraphQL */ `
-  query ListBookingSystems(
-    $filter: ModelBookingSystemFilterInput
+export const listBookingSystemDBs = /* GraphQL */ `
+  query ListBookingSystemDBs(
+    $filter: ModelBookingSystemDBFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listBookingSystems(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        user_id
-        appointment_id
-        clinic_id
-        time
-        date
-        band
-        time_created
-      }
-      nextToken
-    }
-  }
-`;
-export const getAppointmentSystem = /* GraphQL */ `
-  query GetAppointmentSystem($id: ID!) {
-    getAppointmentSystem(id: $id) {
-      appointment_id
-      decription
-      name
-      time_created
-    }
-  }
-`;
-export const listAppointmentSystems = /* GraphQL */ `
-  query ListAppointmentSystems(
-    $filter: ModelAppointmentSystemFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listAppointmentSystems(
+    listBookingSystemDBs(
       filter: $filter
       limit: $limit
       nextToken: $nextToken
     ) {
       items {
+        id
         appointment_id
-        decription
-        name
-        time_created
+        clinic_id
+        time
+        created_at
+        date
+        band
       }
       nextToken
     }
   }
 `;
-export const getClinicsSystem = /* GraphQL */ `
-  query GetClinicsSystem($id: ID!) {
-    getClinicsSystem(id: $id) {
-      clinics_id
-      address
-      Website
-      Description
+export const getAppointmentDb = /* GraphQL */ `
+  query GetAppointmentDb($id: ID!) {
+    getAppointmentDB(id: $id) {
+      id
+      clinic_id
+      name
+      description
       phone
+      created_at
     }
   }
 `;
-export const listClinicsSystems = /* GraphQL */ `
-  query ListClinicsSystems(
-    $filter: ModelClinicsSystemFilterInput
+export const listAppointmentDBs = /* GraphQL */ `
+  query ListAppointmentDBs(
+    $filter: ModelAppointmentDBFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listClinicsSystems(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listAppointmentDBs(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
-        clinics_id
-        address
-        Website
-        Description
+        id
+        clinic_id
+        name
+        description
         phone
+        created_at
+      }
+      nextToken
+    }
+  }
+`;
+export const getClinicsDb = /* GraphQL */ `
+  query GetClinicsDb($id: ID!) {
+    getClinicsDB(id: $id) {
+      id
+      name
+      address
+      phone
+      description
+      website
+    }
+  }
+`;
+export const listClinicsDBs = /* GraphQL */ `
+  query ListClinicsDBs(
+    $filter: ModelClinicsDBFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listClinicsDBs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        address
+        phone
+        description
+        website
+      }
+      nextToken
+    }
+  }
+`;
+export const getInfectionsDb = /* GraphQL */ `
+  query GetInfectionsDb($id: ID!) {
+    getInfectionsDB(id: $id) {
+      id
+      name
+      description
+      webiste
+    }
+  }
+`;
+export const listInfectionsDBs = /* GraphQL */ `
+  query ListInfectionsDBs(
+    $filter: ModelInfectionsDBFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listInfectionsDBs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        description
+        webiste
+      }
+      nextToken
+    }
+  }
+`;
+export const getOrganiationsDb = /* GraphQL */ `
+  query GetOrganiationsDb($id: ID!) {
+    getOrganiationsDB(id: $id) {
+      id
+      name
+      description
+      website
+    }
+  }
+`;
+export const listOrganiationsDBs = /* GraphQL */ `
+  query ListOrganiationsDBs(
+    $filter: ModelOrganiationsDBFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listOrganiationsDBs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        description
+        website
       }
       nextToken
     }

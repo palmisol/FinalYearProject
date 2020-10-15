@@ -1,0 +1,23 @@
+[
+  {
+    "id": "9b4c792c-5e64-11ea-bc55-0242ac130003",
+    "postcode": "SE1 0UN",
+    "name": "Burrell Street",
+    "address": "4-5 Burrell St, Southwark",
+    "phoneNumber": "020 7188 6666"
+  },
+  {
+    "id": "d33047c4-700e-4f6d-a083-f1f17aef6d6f",
+    "postcode": "W1D 6AE",
+    "name": "Dean Street",
+    "address": "456 Dean St, Soho",
+    "phoneNumber": "020 3315 5656"
+  },
+  {
+    "id": "01d06df3-071c-4713-89e8-9708ccde2cfc",
+    "postcode": "W6 7AL",
+    "name": "Chelsea Hospital",
+    "address": "10 Hammersmith Broadway, Hammersmith",
+    "phoneNumber": "020 3315 1010"
+  }
+]

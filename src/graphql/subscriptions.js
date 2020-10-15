@@ -1,108 +1,174 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateBookingSystem = /* GraphQL */ `
-  subscription OnCreateBookingSystem {
-    onCreateBookingSystem {
+export const onCreateBookingSystemDb = /* GraphQL */ `
+  subscription OnCreateBookingSystemDb {
+    onCreateBookingSystemDB {
       id
-      user_id
       appointment_id
       clinic_id
       time
+      created_at
       date
       band
-      time_created
     }
   }
 `;
-export const onUpdateBookingSystem = /* GraphQL */ `
-  subscription OnUpdateBookingSystem {
-    onUpdateBookingSystem {
+export const onUpdateBookingSystemDb = /* GraphQL */ `
+  subscription OnUpdateBookingSystemDb {
+    onUpdateBookingSystemDB {
       id
-      user_id
       appointment_id
       clinic_id
       time
+      created_at
       date
       band
-      time_created
     }
   }
 `;
-export const onDeleteBookingSystem = /* GraphQL */ `
-  subscription OnDeleteBookingSystem {
-    onDeleteBookingSystem {
+export const onDeleteBookingSystemDb = /* GraphQL */ `
+  subscription OnDeleteBookingSystemDb {
+    onDeleteBookingSystemDB {
       id
-      user_id
       appointment_id
       clinic_id
       time
+      created_at
       date
       band
-      time_created
     }
   }
 `;
-export const onCreateAppointmentSystem = /* GraphQL */ `
-  subscription OnCreateAppointmentSystem {
-    onCreateAppointmentSystem {
-      appointment_id
-      decription
+export const onCreateAppointmentDb = /* GraphQL */ `
+  subscription OnCreateAppointmentDb {
+    onCreateAppointmentDB {
+      id
+      clinic_id
       name
-      time_created
+      description
+      phone
+      created_at
     }
   }
 `;
-export const onUpdateAppointmentSystem = /* GraphQL */ `
-  subscription OnUpdateAppointmentSystem {
-    onUpdateAppointmentSystem {
-      appointment_id
-      decription
+export const onUpdateAppointmentDb = /* GraphQL */ `
+  subscription OnUpdateAppointmentDb {
+    onUpdateAppointmentDB {
+      id
+      clinic_id
       name
-      time_created
+      description
+      phone
+      created_at
     }
   }
 `;
-export const onDeleteAppointmentSystem = /* GraphQL */ `
-  subscription OnDeleteAppointmentSystem {
-    onDeleteAppointmentSystem {
-      appointment_id
-      decription
+export const onDeleteAppointmentDb = /* GraphQL */ `
+  subscription OnDeleteAppointmentDb {
+    onDeleteAppointmentDB {
+      id
+      clinic_id
       name
-      time_created
+      description
+      phone
+      created_at
     }
   }
 `;
-export const onCreateClinicsSystem = /* GraphQL */ `
-  subscription OnCreateClinicsSystem {
-    onCreateClinicsSystem {
-      clinics_id
+export const onCreateClinicsDb = /* GraphQL */ `
+  subscription OnCreateClinicsDb {
+    onCreateClinicsDB {
+      id
+      name
       address
-      Website
-      Description
       phone
+      description
+      website
     }
   }
 `;
-export const onUpdateClinicsSystem = /* GraphQL */ `
-  subscription OnUpdateClinicsSystem {
-    onUpdateClinicsSystem {
-      clinics_id
+export const onUpdateClinicsDb = /* GraphQL */ `
+  subscription OnUpdateClinicsDb {
+    onUpdateClinicsDB {
+      id
+      name
       address
-      Website
-      Description
       phone
+      description
+      website
     }
   }
 `;
-export const onDeleteClinicsSystem = /* GraphQL */ `
-  subscription OnDeleteClinicsSystem {
-    onDeleteClinicsSystem {
-      clinics_id
+export const onDeleteClinicsDb = /* GraphQL */ `
+  subscription OnDeleteClinicsDb {
+    onDeleteClinicsDB {
+      id
+      name
       address
-      Website
-      Description
       phone
+      description
+      website
+    }
+  }
+`;
+export const onCreateInfectionsDb = /* GraphQL */ `
+  subscription OnCreateInfectionsDb {
+    onCreateInfectionsDB {
+      id
+      name
+      description
+      webiste
+    }
+  }
+`;
+export const onUpdateInfectionsDb = /* GraphQL */ `
+  subscription OnUpdateInfectionsDb {
+    onUpdateInfectionsDB {
+      id
+      name
+      description
+      webiste
+    }
+  }
+`;
+export const onDeleteInfectionsDb = /* GraphQL */ `
+  subscription OnDeleteInfectionsDb {
+    onDeleteInfectionsDB {
+      id
+      name
+      description
+      webiste
+    }
+  }
+`;
+export const onCreateOrganiationsDb = /* GraphQL */ `
+  subscription OnCreateOrganiationsDb {
+    onCreateOrganiationsDB {
+      id
+      name
+      description
+      website
+    }
+  }
+`;
+export const onUpdateOrganiationsDb = /* GraphQL */ `
+  subscription OnUpdateOrganiationsDb {
+    onUpdateOrganiationsDB {
+      id
+      name
+      description
+      website
+    }
+  }
+`;
+export const onDeleteOrganiationsDb = /* GraphQL */ `
+  subscription OnDeleteOrganiationsDb {
+    onDeleteOrganiationsDB {
+      id
+      name
+      description
+      website
     }
   }
 `;
